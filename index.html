@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDAT NEWS | DEKOPI</title>
+    <link
+      rel="shortcut icon"
+      href="images/dekopi-logo-bg.svg"
+      type="image/x-icon"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Demo styles -->
+    <style>
+      .swiper-container {
+        width: 100%;
+        height: 80%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .swiper-slide img {
+        width: 100%;
+      }
+      .swiper-pagination-bullet {
+        background: #ffffff;
+        opacity: 0.7;
+      }
+      .swiper-pagination-bullet-active {
+        background: #ffdf6c;
+        opacity: 1;
+      }
+    </style>
+
+    <nav>
+      <div class="logo">
+        <img src="images/logo_dekopi.svg" alt="Logo" />
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <a href="#"> Horario </a>
+          </li>
+        </ul>
+        <div class="social-link">
+          <a href="#">
+            <i class="fas fa-globe"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <!-- <i class="fab fa-youtube"></i> -->
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="c-grid">
+        <div class="o-grid one">
+          <div class="left">
+            <h4>Bienvenido Estudiante</h4>
+            <p>
+              En este sitio encontraras anuncios e información de los cursos que
+              estas llevando este VI ciclo.
+            </p>
+          </div>
+          <img src="images/rocket.svg" alt="Rocket" />
+        </div>
+        <div class="o-grid two">
+          <h4>Anuncios IDAT</h4>
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="/idat/anuncio 01.jpg" target="_blank">
+                  <img src="idat/anuncio 01.jpg" alt="anuncio" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="/idat/anuncio 01.jpg" target="_blank">
+                  <img src="idat/anuncio 01.jpg" alt="anuncio" />
+                </a>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="o-grid three">
+          <h4>¿Qué toca HOY?</h4>
+          <ul>
+            <li>
+              <span>07:45 - 10:45</span>
+              <span>Proyecto Certificador De Desarrollo Software III</span>
+            </li>
+            <li>
+              <span>10:45 - 12:45</span>
+              <span>Seguridad Informatica Iso 27001</span>
+            </li>
+          </ul>
+        </div>
+        <div class="o-grid four">
+          <span>20</span>
+          <span>Octubre</span>
+        </div>
+        <div class="o-grid five">Ver Horario (No disponible)</div>
+        <div class="o-grid six">
+          <h4>Cursos</h4>
+          <ul>
+            <li>
+              <span>Proyecto Certificador de Desarrollo de Software III</span>
+              <span>Marco Tulio Ortiz Alfaro</span>
+              <span>07:45 - 10:45 | MARTES</span>
+            </li>
+            <li>
+              <span>Seguridad Informatica Iso 27001</span>
+              <span>Marco Tulio Ortiz Alfaro</span>
+              <span>10:45 - 12:45 | MARTES</span>
+            </li>
+            <li>
+              <span>Proyecto Certificador de Desarrollo de Software III</span>
+              <span>Marco Tulio Ortiz Alfaro</span>
+              <span>07:45 - 10:45 | MIERCOLES</span>
+            </li>
+            <li>
+              <span>Desarrollo De Servicios Web II</span>
+              <span>David Condori Ecos</span>
+              <span>09:15-11:30 | MIERCOLES</span>
+            </li>
+            <li>
+              <span>Proyecto Desarrollo Software II</span>
+              <span>Jorge David Gonzales Maravi</span>
+              <span>08:30 - 12:15 | JUEVES</span>
+            </li>
+            <li>
+              <span>PDesarrollo de Aplicaciones Móviles II</span>
+              <span>Luis Angel Salvatierra Aquino</span>
+              <span>10:45 - 13:00 | SÁBADO</span>
+            </li>
+          </ul>
+        </div>
+        <div class="o-grid seven">
+          <h4>YouTube</h4>
+          <p>
+            No te pierdas de tutoriales que seguramente te ayudarán a resolver
+            una duda o aprender algo nuevo.
+          </p>
+          <i class="fab fa-youtube"></i>
+        </div>
+        <div class="o-grid eight">
+          <a
+            class="title"
+            href="https://soporte-teams.idat.edu.pe"
+            target="_blank"
+          >
+            <h4>¿ZOOM? ¿Como usarlo?</h4>
+          </a>
+          <a class="image" href="/idat/plataforma ZOOM.png" target="_blank">
+            <img src="idat/plataforma ZOOM.png" alt="ZOOM Tutorial" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FontAwesome JS -->
+    <script
+      src="https://kit.fontawesome.com/8719a7912f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

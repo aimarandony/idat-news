@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: "Roboto", sans-serif !important; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f1a;
+  color: #fff;
+}
+nav {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  padding: 0 100px;
+}
+nav .logo {
+  width: 40px;
+}
+nav .logo img {
+  width: 100%;
+}
+nav .right {
+  display: flex;
+}
+nav .right ul {
+  margin: 0;
+  display: flex;
+  margin-right: 40px;
+}
+nav .right li {
+  list-style: none;
+}
+nav .right li a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  opacity: 0.5;
+  font-size: 20px;
+}
+nav .social-link {
+  display: flex;
+}
+nav .social-link a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  opacity: 0.5;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+nav .social-link a i {
+  font-size: 22px;
+}
+nav .social-link a:last-child {
+  padding-right: 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.c-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 38% 12% 24% 23%;
+  grid-template-rows: 20vh 15vh 10vh 5vh 30vh;
+  grid-template-areas:
+    "one one two two"
+    "three four two two"
+    "three six six seven"
+    "five  six six seven"
+    "eight six six seven";
+  gap: 15px;
+}
+.c-grid .o-grid {
+  background: #151523;
+  border-radius: 10px;
+  padding: 30px;
+  overflow-y: auto;
+}
+.one {
+  grid-area: one;
+  display: flex;
+  align-items: center;
+}
+.one .left h4 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.one .left p {
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.6;
+  margin: 0;
+  margin-top: 10px;
+}
+.one img {
+  height: 95%;
+}
+.two {
+  grid-area: two;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.two h4{
+  font-size: 25px;
+  font-weight: 700;
+  color: #e3d08c;
+  margin-bottom: 10px;
+}
+
+.three {
+  grid-area: three;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.three h4 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #ff6b6b;
+}
+.three ul{  
+  /* margin-top: 5px; */
+  margin-bottom: 0;
+}
+.three ul li{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.three ul li{
+  margin-top: 8px;
+}
+.three ul li span:first-child{
+  font-size: 18px;  
+  opacity: .5;
+}
+.three ul li span:last-child{
+  font-size: 20px;
+  font-weight: 500;
+  color: #e3d08c;
+}
+
+.four {
+  grid-area: four;
+  background: #e3d08c !important;
+  color: #0f0f1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+}
+.four span:first-child{
+  font-size: 50px;
+  font-weight: bold;
+}
+.four span:last-child{
+  font-size: 25px;
+  font-weight: 700;
+}
+.five {
+  grid-area: five;
+  background: #ff6b6b !important;
+  color: #0f0f1a;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+}
+.six {
+  grid-area: six;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+.six h4{
+  font-size: 25px;
+  font-weight: 700;
+  color: #87d593;
+}
+.six ul{
+  margin: 0;  
+  overflow-y: auto;
+}
+.six ul li{
+  list-style: none;
+  display: flex;
+  flex-direction: column;  
+}
+.six ul li{
+  margin-top: 10px;
+}
+.six ul li span:first-child{
+  font-size: 20px;  
+  font-weight: 500;
+  color: #e3d08c;
+}
+.six ul li span:nth-child(2){
+  font-size: 20px;  
+  font-weight: 400;
+}
+.six ul li span:last-child{
+  font-size: 15px;
+  font-weight: 400;
+  opacity: .5;
+}
+
+.seven {
+  grid-area: seven;
+  background: #87d593 !important;
+  color: #0f0f1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.seven h4{
+  font-size: 25px;
+  font-weight: 700;
+}
+.seven p{
+  text-align: center;
+  font-size: 17px;  
+}
+.seven i{
+  font-size: 120px;
+}
+
+.eight {
+  grid-area: eight;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.eight h4{
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.eight h4:hover{
+  text-decoration: underline #ffffff;
+}
+.eight .image{
+  display: block;
+  height: 200px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.eight .image img{
+  width: 100%;
+  image-orientation: from-image;
+}
