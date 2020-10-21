@@ -1,0 +1,42 @@
+/* 
+width: 97
+height: 80
+*/
+@media (max-width: 1400px) {
+  .container {
+    height: auto !important;
+    margin: 15px auto;    
+  }
+  .c-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 5% 5% 42% !important;
+    grid-template-rows: 220px 280px 50px 380px 230px !important;
+    grid-template-areas:
+      "one one one four"
+      "three two two two"
+      "five two two two"
+      "six  six seven seven"
+      "eight 0 0 0" !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    height: auto !important;
+    margin: 15px auto;    
+  }
+  .c-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 5% 32%!important;
+    grid-template-rows: 220px 200px 50px 360px 380px 310px !important;
+    grid-template-areas:
+      "one one one"
+      "three three four"
+      "five five four"
+      "two two two"
+      "six  six six"
+      "eight seven seven" !important;
+  }
+}
