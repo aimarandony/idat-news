@@ -48,7 +48,7 @@ const courses = [
     id: 3,
     name: "Proyecto Certificador de Desarrollo de Software III",
     teacher: "Marco Tulio Ortiz Alfaro",
-    hour: "07:45 - 10:45",
+    hour: "07:45 - 09:00",
     day: "MIERCOLES",
   },
   {
